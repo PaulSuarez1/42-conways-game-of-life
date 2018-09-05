@@ -48,8 +48,8 @@ public class World {
     }
 
     public void nextGeneration() {
-        List<Cell> liveCells = new ArrayList<Cell>();
-        List<Cell> deadCells = new ArrayList<Cell>();
+        List<Cell> liveCells = new ArrayList<>();
+        List<Cell> deadCells = new ArrayList<>();
         for (int row = 0; row < width; row++) {
             for (int col = 0; col < height; col++) {
                 Cell cell = board[row][col];
