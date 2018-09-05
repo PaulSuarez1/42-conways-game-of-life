@@ -69,7 +69,7 @@ public class World {
         for (Cell cell : liveCells) {
             cell.reborn();
         }
-        
+
         for (Cell cell : deadCells) {
             cell.die();
         }
