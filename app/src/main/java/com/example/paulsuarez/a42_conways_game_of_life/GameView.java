@@ -14,9 +14,9 @@ import android.view.WindowManager;
 
 public class GameView extends SurfaceView implements Runnable {
 
-    public static final int DEFAULT_SIZE = 50;
-    public static final int DEFAULT_ALIVE_COLOR = Color.WHITE;
-    public static final int DEFAULT_DEAD_COLOR = Color.BLACK;
+    public static final int DEFAULT_SIZE = 20;
+    public static final int DEFAULT_ALIVE_COLOR = Color.BLUE;
+    public static final int DEFAULT_DEAD_COLOR = Color.GRAY;
     private Thread thread;
     private boolean isRunning = false;
     private int columnWidth = 1;
@@ -43,7 +43,7 @@ public class GameView extends SurfaceView implements Runnable {
             if (!getHolder().getSurface().isValid())
                 continue;
             try {
-                Thread.sleep(300);
+                Thread.sleep(1);
             } catch (InterruptedException e) {
                 // I still don't fully understand how these try catches work
             }
