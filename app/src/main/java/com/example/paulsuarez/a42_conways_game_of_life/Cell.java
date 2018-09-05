@@ -11,7 +11,7 @@ public class Cell {
             this.y = y;
             this.on = on;
         }
-        
+
 
         public void die() {
             on = false;
